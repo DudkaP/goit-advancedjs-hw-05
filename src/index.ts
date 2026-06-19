@@ -1,7 +1,10 @@
 import { concatenation } from './concatenation';
 
-const button = document.getElementById('concat-btn') as HTMLButtonElement;
+const button = document.querySelector('button')!;
+const input = document.querySelector('input')!;
 
-button.addEventListener('click', () => {
-  concatenation('John', 'Doe');
-});
+if (button && input) {
+  button.addEventListener('click', () => {
+    concatenation(input.value, 'hello!');
+  });
+}

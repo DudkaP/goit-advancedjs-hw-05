@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "TypeScript project setup with dev server",
   "scripts": {
-    "start": "web-dev-server --node-resolve --open --watch",
-    "build": "tsc && shx cp index.html dist/index.html",
-    "watch": "tsc -w"
+    "start": "web-dev-server --node-resolve --open --watch"
   },
   "keywords": [],
   "author": "",
