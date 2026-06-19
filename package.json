@@ -1,0 +1,17 @@
+{
+  "name": "goit-advancedjs-hw-05",
+  "version": "1.0.0",
+  "description": "TypeScript project setup with dev server",
+  "scripts": {
+    "start": "web-dev-server --node-resolve --open --watch",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@web/dev-server": "^0.2.1",
+    "typescript": "^5.0.0"
+  }
+}
