@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "TypeScript project setup with dev server",
   "scripts": {
-    "start": "web-dev-server --node-resolve --open --watch"
+    "start": "web-dev-server --root-dir dist --node-resolve --open --watch",
+    "build": "tsc && shx cp index.html dist/index.html",
+    "watch": "tsc -w"
   },
   "keywords": [],
   "author": "",
