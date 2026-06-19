@@ -4,7 +4,7 @@
   "description": "TypeScript project setup with dev server",
   "scripts": {
     "start": "web-dev-server --node-resolve --open --watch",
-    "build": "tsc",
+    "build": "tsc && shx cp index.html dist/index.html",
     "watch": "tsc -w"
   },
   "keywords": [],
@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@web/dev-server": "^0.2.1",
+    "shx": "^0.4.0",
     "typescript": "^5.0.0"
   }
 }
